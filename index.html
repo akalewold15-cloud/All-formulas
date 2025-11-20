@@ -545,17 +545,4 @@
                     item.description.am.toLowerCase().includes(searchTerm) ||
                     (item.description.en && item.description.en.toLowerCase().includes(searchTerm))
                 );
-                currentCategoryTitle.textContent = `${translations[currentLang].search_result} (${filtered.length})`;
-                mainContent.style.display = 'none';
-                formulaListScreen.style.display = 'block';
-                renderFormulaList(filtered);
-            } else {
-                showMainContent(); 
-            }
-        }
-
-
-        initializeApp();
-    </script>
-</body>
-</html>
+                currentCategoryTitle.textContent = `${translations[currentLang].search_result} (${filter
